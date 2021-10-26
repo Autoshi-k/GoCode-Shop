@@ -44,3 +44,15 @@ function Header() {
 }
 
 export default Header;
+
+
+// import { iseState } from 'react';
+//  useState() ([value, setValue])
+//                      value = newValue
+//                      rerender()
+
+
+
+// return {
+// ...todo, completed: true
+//} returning new obj with new completed attribute

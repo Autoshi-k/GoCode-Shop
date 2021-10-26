@@ -5,15 +5,19 @@ function Product(itemInfo) {
     <div className="product-card">
         <div className="product-image">
           <img
-            src={ itemInfo.src }
+            src={ itemInfo.image }
           />
         </div>
         <div className="product-info">
-          <h5>{ itemInfo.name }</h5>
-          <h6>{ itemInfo.price }</h6>
+          <h5>{ itemInfo.title }</h5>
+          <h6>${ itemInfo.price }</h6>
         </div>
       </div>
   );
 }
+
+// const obj = {name: "sdfsdf", age: 40};
+
+// const {name, age} = obj;
 
 export default Product;

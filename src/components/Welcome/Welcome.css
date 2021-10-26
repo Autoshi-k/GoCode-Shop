@@ -1,0 +1,16 @@
+.welcome {
+  /* flex-flow: column nowrap; */
+  /* align-items: center; */
+  /* color: red; */
+  /* background-color: royalblue; */
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 4rem;
+}
+
+.welcome span {
+  font-style: italic;
+  color: aqua;
+}
