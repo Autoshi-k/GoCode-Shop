@@ -10,12 +10,11 @@ function App() {
   const [itemsInfo, setItemsInfo] = useState(['']);
   const [filteredItems, setFilteredItems] = useState(itemsInfo);
 
-  async function fetchProducts() {
-    const prom = await fetch('https://fakestoreapi.com/products');
-    setItemsInfo(await prom.json());
-  }
-  
   useEffect(() => {
+    async function fetchProducts() {
+      const prom = await fetch('https://fakestoreapi.com/products');
+      setItemsInfo(await prom.json());
+    }
     fetchProducts();
   }, []); 
   

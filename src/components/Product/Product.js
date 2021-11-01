@@ -6,6 +6,7 @@ function Product(itemInfo) {
         <div className="product-image">
           <img
             src={ itemInfo.image }
+            alt={ itemInfo.title }
           />
         </div>
         <div className="product-info">
