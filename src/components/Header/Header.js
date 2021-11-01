@@ -19,13 +19,13 @@ function Header({ categories, handleFilter}) {
       <div className='collection-sort'>
         <label>Filter by:</label>
         <select onChange= { handleFilter }>
-          { categories.map(item => <option value='/'>{ item }</option>) }
+          { categories.map(item => <option key={ item } value={ item }>{ item }</option>) }
         </select>
       </div>
       <div className='collection-sort'>
         <label>Sort by:</label>
         <select>
-          { sort.map(item => <option value='/'>{ item }</option>) }
+          { sort.map(item => <option key={ item } value={ item }>{ item }</option>) }
         </select>
       </div>
     </div>
