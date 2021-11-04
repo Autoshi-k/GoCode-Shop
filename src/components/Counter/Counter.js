@@ -6,7 +6,6 @@ import './Counter.css';
 function Counter({ itemInfo }) {
   
   const [amountProduct, setAmountProduct] = useState(0);
-  // let productNumber = 0;
   const [[cartSum ,cartItems], setCart] = useContext(CartContext);
 
   const title = cartItems[itemInfo.title];
@@ -25,8 +24,6 @@ function Counter({ itemInfo }) {
         }
       }]
     );
-    // console.log(title, amountProduct);
-    // console.log(cartSum);
   };
 
 

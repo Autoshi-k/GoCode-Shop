@@ -8,7 +8,7 @@ import Cart from '../Cart/Cart';
 
 function CartButton() {
   
-  const [cartBtn, setCartBtn] = useState(true);
+  const [cartBtn, setCartBtn] = useState(false);
   const [[cartSum ,cartItems], setCart] = useContext(CartContext);
 
 
