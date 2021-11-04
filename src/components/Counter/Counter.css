@@ -1,0 +1,25 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: .5em auto;
+}
+
+.counter-btn {
+  background-color: orange;
+  border-radius: .5em;
+  /* background-color: orange; */
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.product-to-add {
+  padding: 0 .5em;
+}

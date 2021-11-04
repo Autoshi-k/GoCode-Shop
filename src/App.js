@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
-import Welcome from './components/Welcome/Welcome';
+import CartContext from './CartContext';
+import CartButton from './components/CartButton/CartButton';
 
 
 function App() {
@@ -30,11 +32,17 @@ function App() {
     selectedFilter ? setFilteredItems(itemsInfo.filter(item => item.category === categories[selectedFilter])) : setFilteredItems(itemsInfo);
   }
   
+  const [cart, setCart] = useState([0, {}]);
+  // const [item, setItem] = useState(['']); NEED TO DELETE FROM SRC TOO
+
   return (
     <>
-      <Welcome/>
       <Header categories= { categories } handleFilter= { handleFilter } />
-      <Products filteredItems = { filteredItems }/>
+      <CartContext.Provider value={ [cart, setCart] }>
+        {/* <Cart /> */}
+        <CartButton />
+        <Products filteredItems = { filteredItems }/>
+      </CartContext.Provider>
     </>
   );
 }

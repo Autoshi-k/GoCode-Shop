@@ -1,0 +1,36 @@
+.cart-item {
+  /* flex-flow: column nowrap; */
+  display: flex;
+  justify-content: space-between;
+  /* border-radius: 10px; */
+  /* background-color: white; */
+  border-bottom: 1px solid grey;
+  padding: 1em;
+  height: 5em;
+  justify-content: space-between;
+  /* width: 80%; */
+}
+
+.cart-item-details {
+  flex-flow: column nowrap;
+}
+
+.cart-item h5 {
+  width: 13em;
+  height: 3em;
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.cart-item img {
+  height: 5em;
+  width: 5em;
+  object-fit: scale-down;
+}
+
+.cart-item span {
+  align-self: center;
+}

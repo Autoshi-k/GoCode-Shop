@@ -11,6 +11,8 @@
 
 .product-image img {
   width: 100%;
+  height: 8em;
+  object-fit: scale-down;
 }
 
 .product-info {

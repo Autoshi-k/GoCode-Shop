@@ -1,3 +1,4 @@
+import Counter from '../Counter/Counter';
 import './Product.css';
 
 function Product(itemInfo) {
@@ -13,6 +14,7 @@ function Product(itemInfo) {
           <h5>{ itemInfo.title }</h5>
           <h6>${ itemInfo.price }</h6>
         </div>
+        <Counter itemInfo={ itemInfo }/>
       </div>
   );
 }
