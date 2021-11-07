@@ -13,7 +13,7 @@ function Cart() {
       <h3>You have { cartSum } items!</h3>
       <div className="cart-items-list">
         { !cartSum && <h4>Nothing to display</h4> }
-        { Object.keys(cartItems).map((itemName, index) => {if (cartItems[itemName].amount) return <CartItem key={index} itemName={ itemName }/>}) } 
+        { Object.keys(cartItems).map((itemName, index) => { if (cartItems[itemName].amount) return <CartItem key={index} itemName={ itemName }/> }) } 
       </div>
     </div>
   );
