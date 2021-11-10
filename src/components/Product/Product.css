@@ -1,8 +1,8 @@
 .product-card {
   display: flex;
   flex-direction: column;
-
-  padding: 2%;
+  padding: 2em;
+  /* width: 20%; */
   flex: 1 16%;
 
   background-color: #fff;
@@ -19,4 +19,12 @@
   margin-top: auto;
   padding-top: 20px;
   text-align: center;
+}
+
+.product-info h5 {
+  height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  margin-bottom: 1em;
 }
