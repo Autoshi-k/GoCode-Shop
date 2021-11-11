@@ -1,6 +1,5 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useState } from "react";
 import CartContext from "../../CartContext";
-import Product from "../Product/Product";
 import './Counter.css';
 
 function Counter({ itemInfo }) {

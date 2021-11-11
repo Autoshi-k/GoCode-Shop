@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.cart-button button:hover {
+  background-color: rgb(255, 123, 0);
+}
+
 .number-of-items {
   height: 2em;
   width: 2em;

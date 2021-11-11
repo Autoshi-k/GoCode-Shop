@@ -24,3 +24,7 @@ label {
   line-height: 2em;
   text-transform: uppercase;
 }
+
+.slider {
+  width: 15em;
+}
